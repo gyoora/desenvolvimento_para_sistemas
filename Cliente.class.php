@@ -30,6 +30,14 @@
 
 			return $conexao;
 		}		
+
+		public function buscar_clientes($conexao)
+		{
+			$sql = "SELECT * FROM clientes";
+			$stm = $conexao -> prepare($sql);
+			$stm -> execute();
+			return $stm -> fetchAll(PDO::FETCH_OBJ);
+		}
 		
 	} //fim da classe
 

@@ -24,7 +24,8 @@
 	} 
 
 	else {
-		header ("location:index.html");
+		header ("location:form_cliente.html");
+		die();
 	}
 
 ?>
