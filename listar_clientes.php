@@ -1,8 +1,8 @@
 <?php
 
-    require_once "Clientes.class.php";
+    require_once "Cliente.class.php";
 
-    $cliente = New Cliente();
+    $cliente = new Cliente();
     $connect = $cliente -> conexao();
     $retorno = $cliente -> buscar_clientes($connect);
 

@@ -3,7 +3,7 @@
 	class Cliente 
 	{	
 		//atributos
-		public function __construct(public int $id_cliente = 0, public string $nome, public string $cpf, public string $email){}
+		public function __construct(public int $id_cliente = 0, public string $nome = "", public string $cpf = "", public string $email = ""){}
 
 		//métodos
 		public function inserir($conexao)
